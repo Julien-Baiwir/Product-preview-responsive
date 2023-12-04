@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --clr-darkcyan:hsl(158, 36%, 37%) ;
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-verydarkblue:hsl(212, 21%, 14%) ;
+  --clr-darkgrayishblue:hsl(228, 12%, 48%) ;
+  --clr-white:hsl(0, 0%, 100%) ;
+}
+
+* {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-white);
+  justify-content: center;
+  align-items: center;
+}
+
+.cadre__photo {
+  max-width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 1.2em;
+}
+
+.container__texte__uptitle {
+  font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-darkgrayishblue);
+  text-transform: uppercase;
+  font-weight: 500, 700;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+.container__texte__title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  margin-right: 90px;
+}
+
+.container__texte__description {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-darkgrayishblue);
+  font-weight: 700;
+  margin-top: 0px;
+  margin-right: 25px;
+
+  .container__prix{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.container__prix__promo{  
+    float: left;
+    color: var(--clr-darkcyan);
+    margin-left: 25px;
+    margin-right: 25px; 
+}
+
+.container__prix__barre{
+    text-decoration: line-through;
+    color: var(--clr-darkgrayishblue);
+}
+
+.btn{
+    display: flex;
+        width: 70%;
+        height: 50px;
+        background-color: $darkcyan;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 7px;
+        align-self: center;
+        transition: background-color 500ms;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: {
+            image: url('icon-cart.svg');
+            repeat: no-repeat;
+            size: 5%;
+            position-y: center;
+            position-x: 27%;
+            
+        }
+}
